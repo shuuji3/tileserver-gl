@@ -6,6 +6,10 @@
   <title>TileServer GL - Server for vector and raster maps with GL styles</title>
   <link rel="stylesheet" type="text/css" href="./assets/index.css" />
   <script>
+    if (!document.location.pathname.endsWith('/')) {
+      document.location += "/";
+    }
+    
     function toggle_xyz(id) {
       var el = document.getElementById(id);
       var s = el.style;
