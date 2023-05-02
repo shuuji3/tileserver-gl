@@ -5,7 +5,7 @@ import fs from 'node:fs';
 
 import clone from 'clone';
 import express from 'express';
-import { validate } from '@maplibre/maplibre-gl-style-spec';
+import validate from '../node_modules/@maplibre/maplibre-gl-style-spec/src/validate_style';
 
 import { getPublicUrl } from './utils.js';
 
